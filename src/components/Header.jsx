@@ -8,7 +8,7 @@ const Header = () => {
     };
     return (
       <header style={headerStyle} className={styles.header}>
-        {/* ... */}
+        {<h1>To Do List</h1>}
       </header>
     );
   };

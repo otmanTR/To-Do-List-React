@@ -1,10 +1,13 @@
-import TodosLogic from './components/TodosLogic';
+
+import TodoApp from './components/TodoApp';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <TodosLogic></TodosLogic>
+      <TodoApp></TodoApp>
+    
     </div>
   );
 }
