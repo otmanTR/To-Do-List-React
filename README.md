@@ -105,7 +105,7 @@ in your terminal
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#In the future, we could add more pokemons. # 🔭 Future Features <a name="future-features"></a>
+#In the future, I will change the design of  project. # 🔭 Future Features <a name="future-features"></a>
 - [ ] **[Create mobile version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
