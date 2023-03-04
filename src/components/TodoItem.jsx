@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from '../App.css';
 
 const TodoItem = ({
@@ -53,4 +53,12 @@ const TodoItem = ({
     </li>
   );
 };
+
+TodoItem.propTypes = {
+  itemProp: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
+  setUpdate: PropTypes.func.isRequired,
+};
+
 export default TodoItem;

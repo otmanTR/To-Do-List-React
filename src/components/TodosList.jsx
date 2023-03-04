@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import TodoItem from './TodoItem';
 
 const TodosList = ({
@@ -16,4 +16,11 @@ const TodosList = ({
     ))}
   </ul>
 );
+
+TodosList.propTypes = {
+  todosProps: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
+  setUpdate: PropTypes.func.isRequired,
+};
 export default TodosList;

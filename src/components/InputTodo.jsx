@@ -1,6 +1,5 @@
-/* eslint-disable no-alert */
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const InputTodo = ({ addTodoItem }) => {
   const [title, setTitle] = useState('');
@@ -15,7 +14,6 @@ const InputTodo = ({ addTodoItem }) => {
       setTitle('');
       setMessage('');
     } else {
-      alert('Please add item');
       setMessage('Please add item.');
     }
     addTodoItem(title);
@@ -37,4 +35,9 @@ const InputTodo = ({ addTodoItem }) => {
     </>
   );
 };
+
+InputTodo.propTypes = {
+  addTodoItem: PropTypes.func.isRequired,
+};
+
 export default InputTodo;
